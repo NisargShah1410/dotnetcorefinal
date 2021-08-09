@@ -22,7 +22,7 @@ jobs:
       run: dotnet build MySampleWebApp/MySampleWebApp.sln --configuration Release
     
     - name: Test
-      run: dotnet test dotnetcorefinal/MySampleWebAppTests1/MySampleWebAppTests1.csproj  /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+      run: dotnet test MySampleWebAppTests1/MySampleWebAppTests1.csproj  /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
   
     #- name: Publish coverage report to coveralls.io   
      # uses: coverallsapp/github-action@master   
